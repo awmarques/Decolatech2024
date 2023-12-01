@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Suporte04\\Documents\\Andrew\\BootCamp Avanade\\ExemploFundamentos\\ExemploFundamentos.csproj",
+      "projectUniqueName": "C:\\Users\\Suporte04\\Documents\\Andrew\\DecolaTech2024\\Decolatech2024\\ExemploFundamentos\\ExemploFundamentos.csproj",
       "projectName": "ExemploFundamentos",
-      "projectPath": "C:\\Users\\Suporte04\\Documents\\Andrew\\BootCamp Avanade\\ExemploFundamentos\\ExemploFundamentos.csproj",
+      "projectPath": "C:\\Users\\Suporte04\\Documents\\Andrew\\DecolaTech2024\\Decolatech2024\\ExemploFundamentos\\ExemploFundamentos.csproj",
       "packagesPath": "C:\\Users\\Suporte04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Suporte04\\Documents\\Andrew\\BootCamp Avanade\\ExemploFundamentos\\obj\\",
+      "outputPath": "C:\\Users\\Suporte04\\Documents\\Andrew\\DecolaTech2024\\Decolatech2024\\ExemploFundamentos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Suporte04\\AppData\\Roaming\\NuGet\\NuGet.Config"
