@@ -2,7 +2,7 @@
 using ExemploFundamentos.Models;
 
 Pessoa p = new Pessoa();
-p.Nome = "andrew";
-p.Idade = 32;
+p.nome = "andrew";
+p.idade = 32;
 
 p.Apresentar();
