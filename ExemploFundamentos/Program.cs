@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
+using System.Reflection.Metadata;
 using ExemploFundamentos.Models;
 
 
@@ -155,8 +156,8 @@ using ExemploFundamentos.Models;
 
 
 string opcao;
-
-while (true){
+bool exibirMenu=true;
+while (exibirMenu){
     Console.WriteLine("Digite a sua opção:");
     Console.WriteLine("1 - Cadastrar Cliente");
     Console.WriteLine("2 - Buscar Cliente");
@@ -164,7 +165,6 @@ while (true){
     Console.WriteLine("4 - Encerrar");
 
     opcao=Console.ReadLine();
-
     switch (opcao){
         case "1":
             Console.WriteLine("Cadastro de cliente");
@@ -181,13 +181,15 @@ while (true){
 
         case "4":
             Console.WriteLine("Encerrar");
-            Environment.Exit(0);
+            exibirMenu=false;
+            //Environment.Exit(0);
             break;
 
         default:
             Console.WriteLine("Opção inválida");
             break;
     }
+    Console.WriteLine("Programa Encerrado!");
 
 
 }
