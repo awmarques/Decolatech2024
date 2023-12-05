@@ -63,9 +63,18 @@ namespace ExemploFundamentos.Models
         public void Taboada (int numero, int ate)
         {            
             
-            for (int i=0;i<=ate;i++){  
+            // for (int i=0;i<=ate;i++){  
+            //     int resultado = numero*i;
+            //     Console.WriteLine($"{numero} * {i} = {resultado}");
+            // }
+            int i =0;
+            while (i <=ate){  
                 int resultado = numero*i;
                 Console.WriteLine($"{numero} * {i} = {resultado}");
+                i++;
+                if (resultado == 65751){
+                    break;
+                }
             }
         }
     }
