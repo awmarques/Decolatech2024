@@ -142,3 +142,4 @@ calc.Seno(30);
 calc.Coseno(30);
 calc.Tangente(30);
 calc.Raiz(49);
+calc.Taboada(7,100);

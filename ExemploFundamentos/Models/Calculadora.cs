@@ -59,5 +59,14 @@ namespace ExemploFundamentos.Models
             double tangente = Math.Tan(radiano);
             Console.WriteLine($"Tangente de {angulo}º = {Math.Round(tangente,4)}");
         }
+
+        public void Taboada (int numero, int ate)
+        {            
+            
+            for (int i=0;i<=ate;i++){  
+                int resultado = numero*i;
+                Console.WriteLine($"{numero} * {i} = {resultado}");
+            }
+        }
     }
 }
