@@ -93,8 +93,8 @@ using ExemploFundamentos.Models;
 
 
 
-Console.WriteLine("Digite uma letra");
-string letra = Console.ReadLine();
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine();
 
 // if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
 //     Console.WriteLine("Vogal");
@@ -102,16 +102,43 @@ string letra = Console.ReadLine();
 //     Console.WriteLine("Consoante");
 // }
 
-switch (letra){
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("Vogal"); 
-        break;
+// switch (letra){
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("Vogal"); 
+//         break;
 
-    default:
-        Console.WriteLine("Consoante");
-        break;
-}
+//     default:
+//         Console.WriteLine("Consoante");
+//         break;
+// }
+
+// bool ehMaiorDeIdade = false;
+// bool possuiAutorizacaoResponsavel=false;
+
+// if (ehMaiorDeIdade || possuiAutorizacaoResponsavel){
+//     Console.WriteLine("Entrada Liberada");
+// }else {
+//     Console.WriteLine("Então não autorizada");
+// }
+
+// bool choveu = false;
+
+// if (!choveu){
+//     Console.WriteLine("Bora pedal");
+// }
+
+Calculadora calc = new Calculadora();
+
+calc.Somar(1,3);
+calc.Subtrair(10,5);
+calc.Multiplicar (10,20);
+calc.Dividir(10,2);
+calc.Potencia(3,3);
+calc.Seno(30);
+calc.Coseno(30);
+calc.Tangente(30);
+calc.Raiz(49);
