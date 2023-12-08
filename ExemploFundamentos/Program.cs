@@ -194,20 +194,45 @@ using ExemploFundamentos.Models;
 
 // }
 
-int [] listaDeNumeros = new int[3];
+// int [] listaDeNumeros = new int[3];
 
-listaDeNumeros[0] = 10;
-listaDeNumeros[1] = 20;
-listaDeNumeros[2] = 30;
+// listaDeNumeros[0] = 10;
+// listaDeNumeros[1] = 20;
+// listaDeNumeros[2] = 30;
 
-Console.WriteLine("percorrendo array com FOR");
-for (int i = 0; i < listaDeNumeros.Length; i++ ){
-    Console.WriteLine($"Posição  Nº {i}:  {listaDeNumeros[i]}");
+// Console.WriteLine("percorrendo array com FOR");
+// for (int i = 0; i < listaDeNumeros.Length; i++ ){
+//     Console.WriteLine($"Posição  Nº {i}:  {listaDeNumeros[i]}");
+// }
+
+// Console.WriteLine("percorrendo array com FOREACH");
+// int contadorForeach = 0;
+// foreach(int valor in listaDeNumeros){
+//     Console.WriteLine($"Posição Nº  {contadorForeach}: {valor}");
+//     contadorForeach++;
+// }
+
+
+List<string> listaString = new List<string>();
+Console.WriteLine($"Capacidade da Lista: {listaString.Capacity}. Itens dentro da Lista: {listaString.Count}");
+listaString.Add("SC");
+Console.WriteLine($"Capacidade da Lista: {listaString.Capacity}. Itens dentro da Lista: {listaString.Count}");
+listaString.Add("PR");
+Console.WriteLine($"Capacidade da Lista: {listaString.Capacity}. Itens dentro da Lista: {listaString.Count}");
+listaString.Add("RS");
+Console.WriteLine($"Capacidade da Lista: {listaString.Capacity}. Itens dentro da Lista: {listaString.Count}");
+listaString.Remove("RS");
+Console.WriteLine($"Capacidade da Lista: {listaString.Capacity}. Itens dentro da Lista: {listaString.Count}");
+
+
+Console.WriteLine("Percorrendo lista com For");
+for (int contador = 0;contador < listaString.Count;contador++){
+    Console.WriteLine($"Posição Nº: {contador} - {listaString[contador]}");
 }
 
-Console.WriteLine("percorrendo array com FOREACH");
-int contadorForeach = 0;
-foreach(int valor in listaDeNumeros){
-    Console.WriteLine($"Posição Nº  {contadorForeach}: {valor}");
-    contadorForeach++;
+Console.WriteLine("Percorrendo lista com Foreach");
+int contadorListaEstados=0;
+foreach (string itemDaLista in listaString){
+    Console.WriteLine($"Posição Nº: {contadorListaEstados} - {listaString[contadorListaEstados]}");
+    contadorListaEstados++;
 }
