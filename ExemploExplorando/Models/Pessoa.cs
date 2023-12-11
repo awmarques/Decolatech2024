@@ -28,7 +28,17 @@ namespace ExemploExplorando.Models
                 _nome=value;
             } 
         }
-        public int idadePessoa { get; set; }
+        private int _idade;
+        public int idadePessoa { 
+            get => _idade;
+            set
+            {
+                if (value < 0){
+                    throw new ArgumentOutOfRangeException("Idade inválida");
+                }
+                _idade = value;
+            }
+        }
 
         public void Apresentar (){
             Console.WriteLine($"Olá, sou uma Pessoa. Meu nome é: {nomePessoa} e tenho {idadePessoa} anos de idade!");

@@ -6,6 +6,6 @@
 Pessoa pessoa = new Pessoa();
 //após instanciar na memória uma variavel referente o modelo estabelecido na classe Pessoa.
 //podemos utilizar as propriedades desse modelo, como nome da pessoa e idade por exemplo
-pessoa.nomePessoa = "";
+pessoa.nomePessoa = "pedro";
 pessoa.idadePessoa = 90;
 pessoa.Apresentar();
