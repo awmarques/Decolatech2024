@@ -7,7 +7,27 @@ namespace ExemploExplorando.Models
 {
     public class Pessoa
     {
-        public string nomePessoa { get; set; }
+        private string _nome;
+
+
+        public string nomePessoa 
+        { 
+            get => _nome.ToUpper();
+            //expressao acima faz a mesma coisa que o get com chaves abaixo
+            /*get
+            {
+                return _nome.ToUpper();
+            } */
+
+            set
+            {
+                if (value == "")
+                {
+                    throw new ArgumentException("O nome não pode ser vazio!");
+                }
+                _nome=value;
+            } 
+        }
         public int idadePessoa { get; set; }
 
         public void Apresentar (){
