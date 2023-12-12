@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace ExemploExplorando.Models
@@ -9,9 +10,6 @@ namespace ExemploExplorando.Models
     {
         public string NomeCurso { get; set; }
 
-
-        
-        //proprieda lista de pessoas que sao alunos ehhe toipe   
         public List<Pessoa> Alunos { get; set; }
 
         public void AdicionarAluno(Pessoa aluno)
@@ -20,12 +18,23 @@ namespace ExemploExplorando.Models
         }
         public int ObterQuantidadeDeAlunosMatriculados()
         {
-           int quantidade = Alunas.Count;
+           int quantidade = Alunos.Count;
            return quantidade;
         }
-        public void RemoverAluno(Pessoa aluno)
+        public bool RemoverAluno(Pessoa aluno)
         {
-            Alunos.Remove(aluno);
+            return Alunos.Remove(aluno);
         }
+
+        public void ListarAlunos()
+        {
+            
+            foreach (Pessoa aluno in Alunos)
+            {
+                Console.WriteLine(aluno.NomePessoa);
+            }
+        }
+
+
     }
 }
