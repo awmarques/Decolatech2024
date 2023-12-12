@@ -10,7 +10,7 @@ namespace ExemploExplorando.Models
         private string _nome;
 
 
-        public string nomePessoa 
+        public string NomePessoa 
         { 
             get => _nome.ToUpper();
             //expressao acima faz a mesma coisa que o get com chaves abaixo
@@ -28,8 +28,10 @@ namespace ExemploExplorando.Models
                 _nome=value;
             } 
         }
+        public string Sobrenome { get; set; }
+        public string NomeCompleto => $"{NomePessoa} {Sobrenome}".ToUpper();
         private int _idade;
-        public int idadePessoa { 
+        public int IdadePessoa { 
             get => _idade;
             set
             {
@@ -41,7 +43,7 @@ namespace ExemploExplorando.Models
         }
 
         public void Apresentar (){
-            Console.WriteLine($"Olá, sou uma Pessoa. Meu nome é: {nomePessoa} e tenho {idadePessoa} anos de idade!");
+            Console.WriteLine($"Olá, sou uma Pessoa. Meu nome é: {NomeCompleto} e tenho {IdadePessoa} anos de idade!");
 
         }
     }
