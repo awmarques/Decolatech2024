@@ -24,6 +24,13 @@ using System.Globalization;
 // cursoCSharp.ListarAlunos();
 
 decimal valorMonetario = 10653.32M;
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 Console.WriteLine(valorMonetario);
 Console.WriteLine($"{valorMonetario:C}");
+Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+Console.WriteLine(valorMonetario.ToString("N2"));
+double porcentagem = .3421;
+Console.WriteLine(porcentagem.ToString("P1"));
+int numero = 123456;
+Console.WriteLine(numero.ToString("##-##-##"));
+
