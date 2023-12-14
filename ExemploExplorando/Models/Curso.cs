@@ -8,6 +8,7 @@ namespace ExemploExplorando.Models
 {
     public class Curso
     {
+        
         public string NomeCurso { get; set; }
 
         public List<Pessoa> Alunos { get; set; }
@@ -29,12 +30,15 @@ namespace ExemploExplorando.Models
         public void ListarAlunos()
         {
             
-            foreach (Pessoa aluno in Alunos)
-            {
-                Console.WriteLine(aluno.NomePessoa);
+            for (int i = 0; i < Alunos.Count; i++){
+                //string texto = "Nº " + (i+1) + " - " + Alunos[i].NomeCompleto;
+                string texto = $"Nº {i+1} - {Alunos[i].NomeCompleto} ";
+                Console.WriteLine(texto);
             }
+            // foreach (Pessoa aluno in Alunos)
+            // {
+            //     Console.WriteLine(aluno.NomePessoa);
+            // }
         }
-
-
     }
 }
