@@ -23,14 +23,31 @@ using System.Globalization;
 // Console.WriteLine($"Alunos do curso: {cursoCSharp.NomeCurso}");
 // cursoCSharp.ListarAlunos();
 
-decimal valorMonetario = 10653.32M;
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
-Console.WriteLine(valorMonetario);
-Console.WriteLine($"{valorMonetario:C}");
-Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
-Console.WriteLine(valorMonetario.ToString("N2"));
-double porcentagem = .3421;
-Console.WriteLine(porcentagem.ToString("P1"));
-int numero = 123456;
-Console.WriteLine(numero.ToString("##-##-##"));
+// decimal valorMonetario = 10653.32M;
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+// Console.WriteLine(valorMonetario);
+// Console.WriteLine($"{valorMonetario:C}");
+// Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+// Console.WriteLine(valorMonetario.ToString("N2"));
+// double porcentagem = .3421;
+// Console.WriteLine(porcentagem.ToString("P1"));
+// int numero = 123456;
+// Console.WriteLine(numero.ToString("##-##-##"));
 
+DateTime data = DateTime.Now;
+Console.WriteLine(data);
+Console.WriteLine(data.ToString("dd/MM/yy hh:mm"));
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm:ss"));
+Console.WriteLine(data.ToShortDateString());
+Console.WriteLine(data.ToShortTimeString());
+
+string dataString = "2022-13-17 18:03";
+
+bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture,DateTimeStyles.None, out DateTime dataa);
+
+
+if (sucesso){
+    Console.WriteLine(dataa);    
+} else {
+    Console.WriteLine("Data inválida!");
+}
