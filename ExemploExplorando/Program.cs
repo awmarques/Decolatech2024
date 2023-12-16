@@ -69,4 +69,28 @@ using System.Globalization;
 //     Console.WriteLine("Fim do processo, obrigado.");
 // }
 
-new ExemploExcecao().Metodo1();
+// new ExemploExcecao().Metodo1();
+
+
+Queue<int> fila = new Queue<int>();
+
+fila.Enqueue(10);
+fila.Enqueue(1);
+fila.Enqueue(2);
+fila.Enqueue(3);
+fila.Enqueue(4);
+fila.Enqueue(5);
+fila.Enqueue(6);
+fila.Enqueue(7);
+fila.Enqueue(8);
+fila.Enqueue(9);
+
+
+foreach (var item in fila){
+    Console.WriteLine(item.ToString());
+}
+Console.WriteLine($"Removendo o valor {fila.Dequeue()} da fila"); //sempre remove o primeiro elemento
+
+foreach (var item in fila){
+    Console.WriteLine(item.ToString());
+}
