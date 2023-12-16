@@ -97,28 +97,56 @@ using System.Globalization;
 
 //Stack Pilha
 
-Stack<int> pilha = new Stack<int>();
+// Stack<int> pilha = new Stack<int>();
 
-pilha.Push(0);
-pilha.Push(1);
-pilha.Push(2);
-pilha.Push(3);
-pilha.Push(4);
-pilha.Push(5);
+// pilha.Push(0);
+// pilha.Push(1);
+// pilha.Push(2);
+// pilha.Push(3);
+// pilha.Push(4);
+// pilha.Push(5);
 
-foreach(int item in pilha) {
+// foreach(int item in pilha) {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o item {pilha.Pop()} da pilha!");
+
+// foreach(int item in pilha) {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine("Add 50");
+// pilha.Push(50);
+
+// foreach(int item in pilha) {
+//     Console.WriteLine(item);
+// }
+
+//Dictionary
+
+Dictionary<string, string> estados = new Dictionary<string, string>();  
+
+estados.Add("SC", "Santa Catarina");
+estados.Add("PR","Paraná");
+estados.Add("MG","Minas Gerais");
+
+
+foreach(var item in estados){
     Console.WriteLine(item);
 }
 
-Console.WriteLine($"Removendo o item {pilha.Pop()} da pilha!");
-
-foreach(int item in pilha) {
+Console.WriteLine($"Removendo o valor: {estados.Remove("SC")}");
+estados["PR"] = "TESTE";
+foreach(var item in estados){
     Console.WriteLine(item);
 }
 
-Console.WriteLine("Add 50");
-pilha.Push(50);
+string chave = "PR";
+Console.WriteLine($"Verificando elemento: {chave}");
 
-foreach(int item in pilha) {
-    Console.WriteLine(item);
+if (estados.ContainsKey(chave)){
+    Console.WriteLine("Valor existente");
+} else {
+    Console.WriteLine("Não existe");
 }
