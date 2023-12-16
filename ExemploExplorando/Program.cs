@@ -72,25 +72,53 @@ using System.Globalization;
 // new ExemploExcecao().Metodo1();
 
 
-Queue<int> fila = new Queue<int>();
+// Queue<int> fila = new Queue<int>();
 
-fila.Enqueue(10);
-fila.Enqueue(1);
-fila.Enqueue(2);
-fila.Enqueue(3);
-fila.Enqueue(4);
-fila.Enqueue(5);
-fila.Enqueue(6);
-fila.Enqueue(7);
-fila.Enqueue(8);
-fila.Enqueue(9);
+// fila.Enqueue(10);
+// fila.Enqueue(1);
+// fila.Enqueue(2);
+// fila.Enqueue(3);
+// fila.Enqueue(4);
+// fila.Enqueue(5);
+// fila.Enqueue(6);
+// fila.Enqueue(7);
+// fila.Enqueue(8);
+// fila.Enqueue(9);
 
 
-foreach (var item in fila){
-    Console.WriteLine(item.ToString());
+// foreach (var item in fila){
+//     Console.WriteLine(item.ToString());
+// }
+// Console.WriteLine($"Removendo o valor {fila.Dequeue()} da fila"); //sempre remove o primeiro elemento
+
+// foreach (var item in fila){
+//     Console.WriteLine(item.ToString());
+// }
+
+//Stack Pilha
+
+Stack<int> pilha = new Stack<int>();
+
+pilha.Push(0);
+pilha.Push(1);
+pilha.Push(2);
+pilha.Push(3);
+pilha.Push(4);
+pilha.Push(5);
+
+foreach(int item in pilha) {
+    Console.WriteLine(item);
 }
-Console.WriteLine($"Removendo o valor {fila.Dequeue()} da fila"); //sempre remove o primeiro elemento
 
-foreach (var item in fila){
-    Console.WriteLine(item.ToString());
+Console.WriteLine($"Removendo o item {pilha.Pop()} da pilha!");
+
+foreach(int item in pilha) {
+    Console.WriteLine(item);
+}
+
+Console.WriteLine("Add 50");
+pilha.Push(50);
+
+foreach(int item in pilha) {
+    Console.WriteLine(item);
 }
