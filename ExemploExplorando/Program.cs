@@ -34,20 +34,39 @@ using System.Globalization;
 // int numero = 123456;
 // Console.WriteLine(numero.ToString("##-##-##"));
 
-DateTime data = DateTime.Now;
-Console.WriteLine(data);
-Console.WriteLine(data.ToString("dd/MM/yy hh:mm"));
-Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm:ss"));
-Console.WriteLine(data.ToShortDateString());
-Console.WriteLine(data.ToShortTimeString());
+// DateTime data = DateTime.Now;
+// Console.WriteLine(data);
+// Console.WriteLine(data.ToString("dd/MM/yy hh:mm"));
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm:ss"));
+// Console.WriteLine(data.ToShortDateString());
+// Console.WriteLine(data.ToShortTimeString());
 
-string dataString = "2022-13-17 18:03";
+// string dataString = "2022-13-17 18:03";
 
-bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture,DateTimeStyles.None, out DateTime dataa);
+// bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture,DateTimeStyles.None, out DateTime dataa);
 
 
-if (sucesso){
-    Console.WriteLine(dataa);    
-} else {
-    Console.WriteLine("Data inválida!");
-}
+// if (sucesso){
+//     Console.WriteLine(dataa);    
+// } else {
+//     Console.WriteLine("Data inválida!");
+// }
+
+// try{
+//     string [] linhas = File.ReadAllLines ("Arquivos/arquivoleitura.txt");
+
+//     foreach (string linha in linhas) {
+//         Console.WriteLine(linha);
+//     }    
+// } catch (FileNotFoundException ex){
+//     Console.WriteLine($"Arquivo não encontrado: {ex.Message}");
+// } catch (DirectoryNotFoundException ex){
+//     Console.WriteLine ($"Diretório do arquivo não encontrado: {ex.Message}");
+// } catch (Exception ex){
+//     Console.WriteLine($"Exexão genérica: {ex.Message}");
+// } finally {
+//     // o finally sempre sera executado
+//     Console.WriteLine("Fim do processo, obrigado.");
+// }
+
+new ExemploExcecao().Metodo1();
