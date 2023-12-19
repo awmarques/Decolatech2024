@@ -7,7 +7,14 @@ using ExemploPOO.Models;
 // p1.Idade = 1;
 // p1.Apresentar();
 
-ContaCorrente c1 = new ContaCorrente(10,100);
-c1.ExibirSaldo();
-c1.Sacar(10000);
-c1.ExibirSaldo();
+// ContaCorrente c1 = new ContaCorrente(10,100);
+// c1.ExibirSaldo();
+// c1.Sacar(10000);
+// c1.ExibirSaldo();
+
+Aluno a1 = new Aluno();
+a1.Nome = "Aluno";
+a1.Idade = 22;
+a1.Email = "aluno@aluno.com.br";
+a1.Nota = 7.5;
+a1.Apresentar();
