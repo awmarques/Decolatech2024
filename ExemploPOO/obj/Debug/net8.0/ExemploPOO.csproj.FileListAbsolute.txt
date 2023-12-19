@@ -1,0 +1,15 @@
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.AssemblyInfoInputs.cache
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.AssemblyInfo.cs
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.csproj.CoreCompileInputs.cache
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.sourcelink.json
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\bin\Debug\net8.0\ExemploPOO.exe
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\bin\Debug\net8.0\ExemploPOO.deps.json
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\bin\Debug\net8.0\ExemploPOO.runtimeconfig.json
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\bin\Debug\net8.0\ExemploPOO.dll
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\bin\Debug\net8.0\ExemploPOO.pdb
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.dll
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\refint\ExemploPOO.dll
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.pdb
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ExemploPOO.genruntimeconfig.cache
+C:\Users\Suporte04\Documents\Andrew\DecolaTech2024\Decolatech2024\ExemploPOO\obj\Debug\net8.0\ref\ExemploPOO.dll
