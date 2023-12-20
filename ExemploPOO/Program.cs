@@ -18,3 +18,11 @@ a1.Idade = 22;
 a1.Email = "aluno@aluno.com.br";
 a1.Nota = 7.5;
 a1.Apresentar();
+
+Professor p1= new Professor();
+p1.Nome = "Professor";
+p1.Idade = 23;
+p1.Email = "professor@teste.com";
+p1.Salario = 1000;
+
+p1.Apresentar();
