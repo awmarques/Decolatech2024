@@ -26,3 +26,7 @@ p1.Email = "professor@teste.com";
 p1.Salario = 1000;
 
 p1.Apresentar();
+
+Corrente c = new Corrente();
+c.CreditarConta(500);
+c.ExibirSaldo();
