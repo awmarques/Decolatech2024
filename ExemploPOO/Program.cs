@@ -1,6 +1,7 @@
 ﻿// // See https://aka.ms/new-console-template for more information
 using System.Runtime.InteropServices.Marshalling;
 using ExemploPOO.Models;
+using ExemploPOO.Interfaces;
 // Console.WriteLine("Hello, World!");
 
 // Pessoa p1 = new Pessoa();
@@ -32,5 +33,8 @@ using ExemploPOO.Models;
 // c.CreditarConta(500);
 // c.ExibirSaldo();
 
-Computador c = new Computador();
-Console.WriteLine (c.ToString());
+// Computador c = new Computador();
+// Console.WriteLine (c.ToString());
+
+ICalculadora c = new Calculadora();
+Console.WriteLine(c.Multiplicar(10,10));
