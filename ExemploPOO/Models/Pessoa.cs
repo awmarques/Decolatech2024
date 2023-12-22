@@ -8,7 +8,7 @@ namespace ExemploPOO.Models
     public class Pessoa
     {
         public Pessoa(){
-            
+
         }
         public Pessoa (string nome){
             Nome = nome;
