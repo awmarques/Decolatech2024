@@ -61,4 +61,20 @@ public class CalculadoraTestes
         // Then
         Assert.True(resultado);
     }
+
+    [Theory]
+    [InlineData(2)]
+    [InlineData(4)]
+    [InlineData(6)]
+    [InlineData(8)]
+    [InlineData(200)]
+    public void DeveVerificarSeOsNumerosSaoParesERetornarVerdadeiro(int num)
+    {
+        //Given
+        //When
+        bool resultado = _calc.EhPar(num);
+        //Assert
+        Assert.True(resultado);
+
+    }
 }
