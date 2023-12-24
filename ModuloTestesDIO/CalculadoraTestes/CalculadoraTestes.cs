@@ -63,18 +63,12 @@ public class CalculadoraTestes
     }
 
     [Theory]
-    [InlineData(2)]
-    [InlineData(4)]
-    [InlineData(6)]
-    [InlineData(8)]
-    [InlineData(200)]
-    public void DeveVerificarSeOsNumerosSaoParesERetornarVerdadeiro(int num)
+    [InlineData(new int[] {2,4,68,562})]
+    [InlineData(new int[] {6,8,10,10,200})]
+    public void DeveVerificarSeOsNumerosSaoParesERetornarVerdadeiro(int[] numeros)
     {
         //Given
-        //When
-        bool resultado = _calc.EhPar(num);
-        //Assert
-        Assert.True(resultado);
-
+        //When //Assert
+        Assert.All(numeros, num => Assert.True(_calc.EhPar(num)));
     }
 }
