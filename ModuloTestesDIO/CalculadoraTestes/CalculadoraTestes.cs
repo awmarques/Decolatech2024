@@ -49,4 +49,16 @@ public class CalculadoraTestes
         // Then
         Assert.Equal(933, resultado);
     }   
+
+    [Fact]
+    public void DeveVerificarSe4EhParERetornarTrue()
+    {
+        // Given
+        int num = 4;
+
+        // When
+        bool resultado = _calc.EhPar(num);
+        // Then
+        Assert.True(resultado);
+    }
 }
